@@ -13,9 +13,7 @@ html, body {
 .slider {
     width: 30vw;
     height: 100vh;
-    position: relative;
     overflow: hidden;
-    transition: transform 0.5s ease-in-out;
     display: flex;
     flex-wrap: wrap;
 }
@@ -23,7 +21,6 @@ html, body {
 .slides {
     display: flex;
     overflow-x: hidden;
-    position: relative;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
