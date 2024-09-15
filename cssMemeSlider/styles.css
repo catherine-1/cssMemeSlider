@@ -22,14 +22,13 @@ html, body {
 
 .slides {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
     position: relative;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
 
 .slide {
-    width: 80vw;
     height: auto;
     flex-direction: column;
     display: flex;
@@ -37,7 +36,6 @@ html, body {
     justify-content: center;
     scroll-snap-align: center;
     box-sizing: border-box;
-    /* transform-origin: center center; */
     transform: scale(1);
 }
 
@@ -51,5 +49,9 @@ html, body {
     height: 0.8rem;
     width: 0.8rem;
     border-radius: 50%;
-    background-color: rgb(51, 50, 50);
+    background-color: rgb(50, 50, 50);
+}
+
+.slider-navlink:hover {
+    background-color: rgb(120, 120, 120);
 }
