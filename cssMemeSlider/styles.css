@@ -37,6 +37,12 @@ html, body {
     scroll-snap-align: center;
     box-sizing: border-box;
     transform: scale(1);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.slide:target {
+    opacity: 1;
 }
 
 .slide img {
@@ -54,4 +60,8 @@ html, body {
 
 .slider-navlink:hover {
     background-color: rgb(120, 120, 120);
+}
+
+.navigation {
+    margin: 0 auto;
 }
